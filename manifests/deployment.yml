@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: baksimage1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: baksimage1
+  template:
+    metadata:
+      labels:
+        app: baksimage1 
+    spec:
+      containers:
+        - name: baksimage1 
+          image: nov09registry.azurecr.io/baksimage1
+          ports:
+          - containerPort: 80
