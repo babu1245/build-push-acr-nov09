@@ -17,7 +17,6 @@ spec:
           image: nov09registry.azurecr.io/bnov10custom1
           ports:
           - containerPort: 80
-
 - - -
 apiVersion: v1
 kind: Service
